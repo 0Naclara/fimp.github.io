@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fonte awesome da estrelinha-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Link css-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sobre </title>
+</head>
+<body>
+    <!--cabeçalho-->
+        <!--imagem azul com note atrás do inicio-->
+    <header style="background-image: url('img/9.png')"> 
+        <div class="container"> <!--divisão que ira agrupar um conjunto de itens-->
+            <!--navbar/menu de opções-->
+            <nav>
+                <!--atualiza a pagina-->
+                <a href="index.html">
+                    <img src="img/logo_odon2.png" alt="Logo">
+                </a>
+                <!--lista ordenada, itens da navbar-->
+                <ul class="ul ">
+                    <a href="index.html">Home</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="servicos.html">Serviços</a>
+                    <a class="btn" href="contato.html">Contatos</a>
+					<div class="close-icon" onclick="closeMenu()"> 
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </div>
+				</ul>
+				<div class="menu-icon" onclick="openMenu()">
+					<i class="fa-solid fa-bars"></i>
+				</div>
+            </nav>
+            <!--banner, parte onde fica o nome grande com a frase embaixo e o botao-->
+            <section class="banner">
+                <div class="banner-text"> <!--H1 e texto-->
+                    <h1>Sobre</h1>
+                    
+                </div>
+            </section>
+        </div>
+        <!--FIM CONTAINER-->
+    </header>
+    <!--fim do cabeçalho-->
+    <section class="sobre">
+        <div class="container">
+            <div class="sobre-text">
+                <h3>Sobre nós:</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Consequuntur harum natus cum quia quo facilis ipsam
+                      perferendis laudantium ex eius! Ea obcaecati impedit,
+                     quos unde fugiat hic dolores consectetur nostrum?
+                     Consequuntur harum natus cum quia quo facilis ipsam
+                     perferendis laudantium ex eius! Ea obcaecati impedit,
+                    quos unde fugiat hic dolores consectetur nostrum?
+                </p>
+                <a href="contato.html" class="btn animate-btn">Entre em contato</a>
+            </div>
+            <div class="sobre-img">
+                <img src="img/sobre5.jpeg" alt="ilustração">
+            </div>
+        </div>
+    </section>
+    
+    <!--footer-->
+        <footer class="footer">
+            <div class="container">
+                <div class="links">
+                    <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
+                    <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+                    <a href="https://api.whatsapp.com/send?phone=5515997506660"> <i class="fa-brands fa-whatsapp"></i> </a>
+                    <a href="#"> <i class="fa-brands fa-linkedin-in"></i> </a>
+                    <p>Desenvolvido por FIMP</p>
+                </div>
+            </div>
+        </footer>
+    <!--fim do footer-->
+
+    <script src="java/main.js"></script>
+</body>
+</html>

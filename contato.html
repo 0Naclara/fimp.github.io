@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fonte awesome da estrelinha-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Link css-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contato </title>
+</head>
+<body>
+    <!--cabeçalho-->
+        <!--imagem azul com note atrás do inicio-->
+    <header style="background-image: url('img/2.png')"> 
+        <div class="container"> <!--divisão que ira agrupar um conjunto de itens-->
+            <!--navbar/menu de opções-->
+            <nav>
+                <!--atualiza a pagina-->
+                <a href="index.html">
+                    <img src="img/logo_odon2.png" alt="Logo">
+                </a>
+                <!--lista ordenada, itens da navbar-->
+                <ul class="ul ">
+                    <a href="index.html">Home</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="servicos.html">Serviços</a>
+                    <a class="btn" href="contato.html">Contatos</a>
+					<div class="close-icon" onclick="closeMenu()"> 
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </div>
+				</ul>
+				<div class="menu-icon" onclick="openMenu()">
+					<i class="fa-solid fa-bars"></i>
+				</div>
+            </nav>
+            <!--banner, parte onde fica o nome grande com a frase embaixo e o botao-->
+            <section class="banner">
+                <div class="banner-text"> <!--H1 e texto-->
+                    <h1>Contato</h1>
+                    <p> Entre em contato com nossa equipe para agendar sua consulta!</p>
+                </div>
+            </section>
+        </div>
+        <!--FIM CONTAINER-->
+    </header>
+    <!--fim do cabeçalho-->
+    <section class="contato">
+        <div class="container">
+            <div class="mapa"> 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.9962712246233!2d-47.4388849!3d-23.496643799999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf6017fc3d16e7%3A0x4295c1a514f4500b!2sPra%C3%A7a%20Cel.%20Joaquim%20Estanislau%20de%20Arruda%2C%20212%20-%20Vila%20Mencacci%2C%20Sorocaba%20-%20SP%2C%2018015-015!5e0!3m2!1spt-BR!2sbr!4v1692918857518!5m2!1spt-BR!2sbr" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                <!--O iframe serve p mstrrar outros conteudos de outros sites no nosso-->
+                </iframe>
+            </div>
+            <div class="contato-info"> 
+                <div class="left-side">
+                    <div>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Praça Coronel Joaquim Estanislau de Arruda, 212. Bairro: Árvore Grande,Sorocaba-SP</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>fimp@gmail.com</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                        <p>(15) 3227-6660</p>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-whatsapp"></i> 
+                        <p><a href="https://api.whatsapp.com/send?phone=5515997506660">(15) 99750-6660</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+        <footer class="footer">
+            <div class="container">
+                <div class="links">
+                    <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
+                    <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+                    <a href=" https://api.whatsapp.com/send?phone=5515997506660"> <i class="fa-brands fa-whatsapp"></i> </a>
+                    <a href="#"> <i class="fa-brands fa-linkedin-in"></i> </a>
+                    <p>Desenvolvido por FIMP</p>
+                </div>
+            </div>
+        </footer>
+    <!--fim do footer-->
+
+    <script src="java/main.js"></script>
+</body>
+</html>

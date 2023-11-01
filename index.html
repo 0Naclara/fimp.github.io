@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fonte awesome da estrelinha-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Link css-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Consultório Odontologico Dr. Ricardo </title>
+</head>
+<body>
+    <!--cabeçalho-->
+        <!--imagem azul com note atrás do inicio-->
+    <header class="imagem_index" style="background-image: url('img/10.png')"> 
+        <div class="container"> <!--divisão que ira agrupar um conjunto de itens-->
+            <!--navbar/menu de opções-->
+            <nav>
+                <!--atualiza a pagina-->
+                <a href="index.html">
+                    <img src="img/logo_odon2.png" alt="Logo">
+                </a>
+                <!--lista ordenada, itens da navbar-->
+                <ul class="ul ">
+                    <a href="index.html">Home</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="servicos.html">Serviços</a>
+                    <a class="btn" href="contato.html">Contatos</a>
+					<div class="close-icon" onclick="closeMenu()"> 
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </div>
+				</ul>
+				<div class="menu-icon" onclick="openMenu()">
+					<i class="fa-solid fa-bars"></i>
+				</div>
+            </nav>
+            <!--banner, parte onde fica o nome grande com a frase embaixo e o botao-->
+            <section class="banner">
+                <div class="banner-text"> <!--H1 e texto-->
+                    <h1>Consultório Odontologico Dr. Ricardo</h1>
+                    <p>O sorriso dos seus sonhos está a um passo de distância - agende já a sua consulta!</p>
+                    <a href="contato.html" class="btn animate-btn">Entrar em contato</a>
+                </div>
+            </section>
+        </div>
+        <!--FIM CONTAINER-->
+    </header>
+    <!--fim do cabeçalho-->
+
+    <!--faca-mais-->
+    <section class="faca-mais"> 
+        <!--Container2, rolando p baixo da primeira tela"-->
+        <div class="container"> 
+            <div class="sobre-text">
+                <h3>O melhor atendimento!</h3>
+                <p> 
+                    Cuidamos não apenas dos sorrisos, 
+                    mas também do seu conforto e bem-estar.
+                </p>
+                <a href="contato.html" class="btn animate-btn">Entrar em contato</a>
+            </div>
+            <div class="faca-mais-img2">
+                <img src="img/dente-na-placa2.png" alt="ilustração">
+            </div>
+        </div>
+        <!--fim do container2-->
+    </section>
+    <!--Fim Faca mais  -->
+
+    <!--Faca mais 2 -->
+    <section class="sobre"> 
+        <!--Container3, rolando p baixo da primeira tela"-->
+        <div class="container"> 
+            <div class="faca-mais-img">
+                <img src="img/tres_medicos3.png" alt="ilustração">
+            </div>
+            <div class="faca-mais-text">
+                <h3>Ambiente acolhedor e de confiança</h3>
+                <p>
+                    Nossa equipe dedicada está aqui para tornar a sua 
+                    visita ao consultório odontológico 
+                    uma experiência positiva!
+                </p>
+                <a href="contato.html" class="btn animate-btn">Entrar em contato</a>
+            </div>
+            
+        </div>
+        <!--fim do container3-->
+    </section>
+    <!--Fim Faca mais 2 -->
+
+    <!--Comentários/depoimentos-->
+	
+    <section class="depoimentos">
+        <div class="container">
+            <h3>
+                Horários de atendimento
+            </h3>
+            <p>Agende através do nosso WhatsApp</p>
+            <div class="cards">
+                <!--Card item 1-->
+                <div class="card-item">
+                    <img src="img/agenda2.png" alt="Cliente">
+                    <p class="nome-user">Segunda a sexta:</p>
+                    <p class="depoimento-user"> Atendemos das 8h às 12h e das 14h às 18h.
+                    </p>
+                    <p class="nome-user">Aos sábados:</p>
+                    <p class="depoimento-user"> Atendemos das 9h às 12h.
+                    </p>
+                    <!-- <div class="estrelas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div> -->
+                </div>
+                <!--fim Card item 1-->
+
+                 <!--Card item 2-->
+                 <!-- <div class="card-item">
+                    <img src="img/cachorro.png" alt="Cliente">
+                    <p class="nome-user">Aos sábados:</p>
+                    <p class="depoimento-user"> Atendemos das 9h às 12h.
+                    </p>
+                     <div class="estrelas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div> -->
+                <!-- </div>  -->
+                <!--fim Card item 2-->
+
+                 <!--Card item 3-->
+                 <!-- <div class="card-item">
+                    <img src="img/macaco.png" alt="Cliente">
+                    <p class="nome-user"> User</p>
+                    <p class="depoimento-user"> Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. Dolor veritatis 
+                        rerum tempora, tempore voluptates iure perspiciatis aliquid accusantium natus maxime? Sunt cum, ut repudiandae labore doloribus omnis dolore maiores 
+                        delectus.
+                    </p>
+                    <div class="estrelas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div> -->
+                <!--fim Card item 3-->
+            </div>
+        </div>
+    </section>
+    <!--fim Comentários/depoimentos-->
+
+    <!--Patrocinios-->
+   <!-- <section class="clientes">
+        <div class="container">
+            <h3>Nossos clientes</h3>
+            <p>Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit.
+            </p>
+            <div>
+                <img src="img/apple.png" alt="marca">
+                <img src="img/microsoft.png" alt="marca">
+                <img src="img/slack.png" alt="marca">
+                <img src="img/google.png" alt="marca">
+            </div>
+        </div>
+    </section>-->
+       
+    <!--Fim de clientes/apoiadores--> 
+
+    <!--tenha um website seguro-->
+    <section class="sobre"> 
+        <!--Container2, rolando p baixo da primeira tela"-->
+        <div class="container"> 
+            <div class="faca-mais-text">
+                <h3>Consultório moderno e confortável</h3>
+                <p>
+                    Nosso espaço odontológico é um ambiente acolhedor e equipado com tecnologia de ponta
+                    altamente qualificados para seus tratamentos.
+                </p>
+                <a href="contato.html" class="btn animate-btn">Entrar em contato</a>
+            </div>
+            <div class="sobre-img2">
+                <img src="img/ficha-dente.png" alt="ilustração">
+            </div>
+        </div>
+        <!--fim do container2-->
+    </section>
+    <!--fim do: tenha um website seguro  -->
+
+    <!--footer-->
+        <footer class="footer">
+            <div class="container">
+                <div class="links">
+                    <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
+                    <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+                    <a href="https://api.whatsapp.com/send?phone=5515997506660"> <i class="fa-brands fa-whatsapp"></i> </a>
+                    <a href="#"> <i class="fa-brands fa-linkedin-in"></i> </a>
+                    <p>Desenvolvido por FIMP</p>
+                </div>
+            </div>
+        </footer>
+    <!--fim do footer-->
+
+    <script src="java/main.js"></script>
+</body>
+</html>

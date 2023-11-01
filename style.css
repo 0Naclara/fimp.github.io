@@ -1,0 +1,561 @@
+*{ /*seletor universal, seleciona todas as tags do site*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; /*tira sublinhado*/
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #f1f6fc31;
+}
+section, footer {
+    padding: 54px 0;
+}
+.banner p{
+    color: white;
+}
+h3{
+    font-size: 50px;
+}
+p{
+    color: #0000009c;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;  
+    padding: 0 5%;
+}
+.btn{
+    background-color: #7087a8 ;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block; /*comportamento de bloco*/
+    transition: 0.1s;
+    margin-top: 10px;
+}
+.btn.animate-btn{
+    animation: animate-outline 1s ease-out infinite;
+}
+.btn:hover{
+    background-color: #526e95;
+}
+@keyframes animate-outline { /*animações baseadas em 4 chaves. Este animate-outline é o nome da animação escolhida*/
+    /*de um ponto A do botão:*/
+    from{ 
+        outline: 0px solid #4f9bf98a;
+    }
+    to{
+        outline: 15px solid #4f9bf900;
+    }
+    /*para um potno B*/
+}
+header{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; /*da o efeito de rolar e ela ficar fixada*/
+
+}
+nav{
+    display: flex; /*deixa aos elemntos um do lado do outro*/
+    align-items: center; /*alinha os elemento no eixo y*/
+    justify-content: space-between ;  /*deixa o espaço igual p todos os elementos*/
+    padding-top: 30px;
+
+}
+nav ul{
+    display:flex;
+    align-items: center;
+}
+nav ul a{
+    color: white;
+    margin: 0 25px;
+    text-transform: uppercase; /*tudo em maiusculo*/
+    font-size: 14px;
+    display: block;
+}
+nav ul a:not(.btn)::after{ /*este not(.classedobotão) faz com que NÃO ocorra animção no botão de conttaos*/
+    content: " "; /*a mesma frase/palavra aparece em todos os elementos selecionados*/
+    background-color: #7087a8;
+    height: 3px;
+    width: 0%; /*a linha fica 100% na palavra, mas par fazer a animação usa-se o hover. (situação logo a seguir)*/
+    display: block;
+    margin:0 auto; /*centraliza a animação*/
+    transition: 0.3s; /*tempo de demora*/
+}
+nav ul a:hover::after{
+    width: 100%; /*para terminar no 100%*/
+
+}
+/*menu de opções*/
+nav .menu-icon{
+	cursor: pointer;
+	font-size:25px; 
+	color:white;
+	display: none; /*oculta o menu*/
+}
+nav .close-icon{
+	display: none;
+	font-size:30px; /*tamanho dp icone de fechar do menu*/
+	color:white;
+}
+.banner{
+    display:flex;
+    justify-content: center; /*eixo horizoltar*/
+
+}
+.banner .banner-text{
+    margin:150px;
+    text-align: center;
+    padding: 0 90px;
+
+}
+.banner .banner-text h1{
+    font-size: 80px;
+    color: white;
+
+}
+.banner .banner-text p{
+    font-size: 20px;
+    color: #ffffb7;
+    font-weight: lighter;
+    margin: 18px 0;
+}
+
+/*faca mais, segunda parte da primeira tela*/
+.faca-mais .container{
+    display: flex;
+    align-items: center; /*centraliza os itens*/
+
+}
+.faca-mais .faca-mais-text{
+    width: 50%; /*texto e imagem ira ocupar 50%*/
+    padding: 0 40px;
+}
+.faca-mais .faca-mais-img{
+    width: 50%; /*texto e imagem ira ocupar 50%*/
+}
+.faca-mais .faca-mais-tex h3{
+    font-size: 56px;
+}
+.faca-mais .faca-mais-tex p{
+    font-size: 5px 0 10px 0;
+}
+
+/* cards/depoimentos */
+.depoimentos h3{
+    text-align: center;
+}
+.depoimentos p{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cards{
+    color: #2f4a6f;
+    display: flex; /*poe um do lado do outros*/
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.depoimentos .card-item{
+    background-color: #c3cfdf;
+    margin: 15px;
+    border-radius: 14px;
+    text-align: center;
+    width: 350px;
+    transition: 0.3s;
+}
+.depoimentos .card-item img{
+    background-color: #2f4a6f;
+    border-radius: 14px;
+    width: 70px;
+    padding: 9px;
+    margin: 15px;
+}
+.depoimentos .card-item .nome-user{
+    font-weight: 60px;
+    font-size: 20px;
+    margin-bottom: 15px ;
+    transition:0.3s ;
+}
+.depoimentos .card-item .depoimento-user{
+    font-size: 15px;
+    padding: 0 15px;
+    transition: 0.3s;
+}
+.depoimentos .card-item .estrelas{
+    margin: 15px 0;
+    border-top: 2px solid #71767a23;
+}
+.depoimentos .card-item .estrelas i{
+    color: #2f4a6f;
+    margin-top: 15px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.depoimentos .card-item:hover{ /*muda a cor do card ao passar o mouse em cima */
+    background-color: #2f4a6f;
+    margin-top: -5px;
+}
+.depoimentos .card-item:hover .nome-user,
+.depoimentos .card-item:hover .depoimento-user,
+.depoimentos .card-item:hover .estrelas i{
+    color:white;
+}
+/*Apoiadores*/
+.clientes h3, .clientes p{
+    text-align: center;
+}
+.clientes .container div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /*deixa um espaço entre os itens*/
+}
+/*FOOter*/
+.footer{
+    background-color: #051c39;
+    text-align: center;
+}
+.footer i{
+    color: #051c39; 
+    font-size: 19px;
+    background-color: white;
+    padding: 10px;
+    margin:3px;
+    border-radius: 10px;
+}
+.footer p{
+    margin-top: 10px;
+    color: white;
+}
+
+
+/*======================== PAGINA SOBRE =========================*/
+.sobre .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sobre .sobre-text{
+    width: 50%;
+    padding-right: 40px;  
+}
+.sobre .sobre-text p{
+    margin: 18px 0;
+    color:#000000a6;
+}
+.sobre .spbre-img{
+    width: 50%;
+}
+.sobre .sobre-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+/*======================== FIM PAGINA SOBRE =========================*/
+
+
+
+
+/*======================== PAGINA SERVIÇOS =========================*/
+.servicos h3{
+    text-align: center;
+}
+.servicos .container > p{
+    text-align: center;
+}
+.servicos .rows-cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap; /*ele quebra linha e fica em 3 blocos, se adaptando a tela */
+}
+.servicos .row-card-item{
+    background-color: #c3cfdf ;
+    width: 350px;
+    padding: 20px;
+    border-radius: 14px;
+    margin: 20px;
+    transition: 0.3s;
+}
+.servicos .row-card-item:hover{
+    background-color: #2f4a6f;
+}
+.servicos .row-card-item img{
+    background-color: #2f4a6f;
+    border-radius: 14px;
+    width: 70px;
+    padding: 9px;
+}
+.servicos .row-card-item:hover p{
+    color:white;
+}
+.servicos .row-card-item p .nome-servico{
+    margin: 5px;
+    transition: 0.3s;
+}
+.servicos .row-card-item p .descricao-servico{
+    transition: 0.3s;
+}
+
+/*dados do final da pag*/
+.dados {
+   background-color: #d3e6fd;
+}
+.dados .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.dados .dados-item{
+    text-align: center;
+    margin: 15px;
+    color: #000000be;
+}
+.dados .dados-item img{
+    background-color: #4f9cf9;
+    border-radius: 14px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 80px;
+}
+.dados .dados-item p{
+    font-size: 18px;
+}
+.dados .dados-item p strong{
+    font-size: 28px;
+}
+
+/*fim dados do final da pag*/
+
+/*======================== FIM PAGINA SERVIÇOS =========================*/
+
+
+
+
+
+
+/*======================== PAGINA CONTATOS =========================*/
+.contato-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.contato-info .left-side{
+    width: 50%;
+    padding: 30px;
+    background-color: #4f9cf9;
+    border-radius: 14px;
+    margin-right: 50px;
+    height: fit-content; /*Altura baseada no container*/
+}
+.contato-info .left-side div{
+    display: flex;
+    align-items: center;
+    margin-bottom:10px;
+}
+.contato-info .left-side div i{
+    font-size: 24px;
+    margin-right: 20px;
+    color: white;
+}
+.contato-info .left-side p{
+    font-size: 17px;
+    color:white;
+}
+.contato-info .right-side{
+    width: 50%;
+}
+.contato-info .right-side input{
+    display:block;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 47px;
+    padding: 15px;
+    border-radius: 9px;
+    transition: 0.3s;
+    border: 1px solid #f1f1f1;
+    font-weight: lighter;
+}
+.contato-info .right-side input:focus, 
+.contato-info .right-side textarea:focus{ /*Aparece aquela borda colorida quando clicar*/
+    border-color: #4f9cf9;
+}
+.contato-info .right-side textarea{
+    border: 1px solid #f1f1f1;
+    color: #212121;
+    border-radius: 9px;
+    margin-bottom:10px ;
+    padding: 15px;
+    width: 100%;
+    transition: 0.3s;
+    resize: none; /*deixa fico o tamnaho dos campos, sendo imporssivel aumenta-los*/
+}
+.contato-info .right-side button{
+    border: none;
+}
+/*======================== FIM PAGINA CONTATOS =========================*/
+
+
+
+/*deixando responsivo*/
+@media (max-width:830px){ /*aqui definiu o tamanho que irá aplicar*/
+	/*menu mobile*/
+	.ul{ /*para deixar dentro do menu no mpbile*/
+		position:fixed;
+		top:0;
+		left:0;
+		background: #051c39;
+		width: 100%;
+		height:100%;
+		flex-direction: column;
+        align-items: center;
+		justify-content: center;
+        /*Inicio do circulo da animação do menu*/
+		clip-path: circle(0.0% at 100% 0); /*esse cli-path é animações que da para fazer, e peguei as "coordernadas" em um site: https://bennettfeely.com/clippy/ */
+        transition: 0.7s;
+    }
+    
+    .ul.open{
+        clip-path: circle(141.4% at 100% 0); /*final do circulo add p animação do menu*/
+    }
+	.ul a{
+		margin:10px 0;
+		font-size: 16px;
+		
+	}
+	nav .menu-icon {
+		 display:block; /*aparece o menu*/
+	}
+	nav .close-icon{
+		display: block;
+		position: absolute;
+		top: 46px;
+		right: 28px;
+	}
+    
+    /*Pagina home responsiva*/
+     .faca-mais-tex .container{
+        flex-direction: column;    
+    }
+    .faca-mais .faca-mais-img,
+    .faca-mais .faca-mais-tex{
+        width: 100%;
+    }
+    .container .btn.animate-btn{
+       order: 2;
+    }
+    .container .faca-mais-img{
+        margin-top:17px;
+        order: 1;
+		flex-direction: column;
+
+    }
+    .faca-mais .faca-mais-tex{
+        margin-top: 40px;
+    }
+
+    .contato-info .left-side{
+         width: 100%;
+    }
+
+    /*banner responsivo*/
+    .banner .banner-text{
+        padding: 0;
+        margin: 80px;
+    }
+    .banner .banner-text h1{
+        font-size: 65px;
+    }
+    .banner .banner-text p{
+        font-size: 15px;
+        color: white;
+    }
+    .depoimentos .card-item{
+        width: 100%;
+    }
+	.faca-mais-img2{
+		display: none;
+	}
+	.sobre-img2{
+		display: none;
+	}
+/*pagina sobre responsiva*/
+    .sobre .container{
+        flex-direction: column;    
+    }
+    .sobre .sobre-img,
+    .sobre .sobre-text{
+        width: 100%;
+    }
+    .animate-btn{
+       order: 2;
+    }
+    .sobre-img{
+        margin-top:17px;
+        order: 1;
+
+    }
+    .sobre .sobre-text{
+        margin-top: 40px;
+    }
+
+    .contato-info .left-side{
+         width: 100%;
+    }
+
+}
+@media (max-width:500px) {
+    body{
+        margin:0;
+        padding:0;
+        flex-direction: column; 
+        justify-content: space-between ;
+    }
+    .container{
+        max-width: 1400px;
+        margin: 0 auto;  
+        padding: 0 5%;
+        flex-direction: column-reverse; 
+    }
+    header .imagem_index img{
+        width: 100%;
+    }
+    .banner .banner-text h1{
+        font-size: 55px;
+    }
+    .banner {
+        width: 100%;
+    }
+    .faca-mais-text h3{
+        text-align: left;
+    }
+     .faca-mais-img{
+        max-width: 100%;
+        height: auto;
+        display: flex;
+    }
+    .btn{
+        background-color: #7087a8 ;
+        color: white;
+        padding: 15px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        display: inline-block; /*comportamento de bloco*/
+        transition: 0.1s;
+        height: 45px;
+        width: 160px;
+        font-size: 15px;
+    }
+    .btn.animate-btn{
+        animation: animate-outline 1s ease-out infinite;
+    }
+    .btn:hover{
+        background-color: #526e95;
+    }
+    .contato-info .left-side{
+        width: 100%; 
+    }
+    }

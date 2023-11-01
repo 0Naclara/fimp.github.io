@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fonte awesome da estrelinha-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Link css-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Serviços </title>
+</head>
+<body>
+    <!--cabeçalho-->
+        <!--imagem azul com note atrás do inicio-->
+    <header style="background-image: url('img/servicos.png')"> 
+        <div class="container"> <!--divisão que ira agrupar um conjunto de itens-->
+            <!--navbar/menu de opções-->
+            <nav>
+                <!--atualiza a pagina-->
+                <a href="index.html">
+                    <img src="img/logo_odon2.png" alt="Logo">
+                </a>
+                <!--lista ordenada, itens da navbar-->
+                <ul class="ul ">
+                    <a href="index.html">Home</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="servicos.html">Serviços</a>
+                    <a class="btn" href="contato.html">Contatos</a>
+					<div class="close-icon" onclick="closeMenu()"> 
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </div>
+				</ul>
+				<div class="menu-icon" onclick="openMenu()">
+					<i class="fa-solid fa-bars"></i>
+				</div>
+            </nav>
+            <!--banner, parte onde fica o nome grande com a frase embaixo e o botao-->
+            <section class="banner">
+                <div class="banner-text"> <!--H1 e texto-->
+                    <h1>Serviços</h1>
+                    
+                </div>
+            </section>
+        </div>
+        <!--FIM CONTAINER-->
+    </header>
+    <!--fim do cabeçalho-->
+    <section class="servicos">
+        <div class="container">
+            <h3>Nossos serviços</h3>
+            <p>Conheça os nossos melhores serviços que temos para si!</p>
+       <!--Cards dos procedimentos-->
+        </div>
+        <div class="rows-cards">
+            <!--Row card item 1/primeiro card -->
+            <div class="row-card-item">
+                <img src="img/equipamentos.png" alt="">
+                <p class="nome-servico">
+                    <strong>Tratamento Endodôndico</strong>
+                </p>
+                <p class="descricao-servico">
+                    O tratamento endodôntico é fundamental para salvar um 
+                    dente afetado por infecções na polpa, 
+                    preservando sua estrutura e função.
+                </p>
+            </div>
+            <!--fim Row card item 1/primeiro card -->
+
+             <!--Row card item 2/primeiro card -->
+             <div class="row-card-item">
+                <img src="img/dente2.png" alt="">
+                <p class="nome-servico">
+                    <strong>Tratamento Periodontal</strong>
+                </p>
+                <p>O tratamento periodontal visa combater doenças gengivais, 
+                    restaurando a saúde das gengivas e promovendo um sorriso saudável.</p>
+            </div>
+            <!--fim Row card item 2/primeiro card -->
+
+             <!--Row card item 3/primeiro card -->
+             <div class="row-card-item">
+                <img src="img/lupa_dente.png" alt="">
+                <p class="nome-servico">
+                    <strong>Restaurações</strong>
+                </p>
+                <p>As restaurações dentárias são procedimentos essenciais para reparar 
+                    dentes danificados por cáries ou fraturas. Com materiais como resina composta ou amálgama, o dentista restaura a estrutura dental, 
+                    devolvendo a função e a estética ao sorriso.</p>
+            </div>
+            <!--fim Row card item 3/primeiro card -->
+
+             <!--Row card item 4/primeiro card -->
+             <div class="row-card-item">
+                <img src="img/dente_mao.png" alt="">
+                <p class="nome-servico">
+                    <strong>Extrações</strong>
+                </p>
+                <p>As extrações dentais são procedimentos odontológicos realizados 
+                    quando um dente está danificado, 
+                    comprometendo a saúde bucal..</p>
+            </div>
+            <!--fim Row card item 4/primeiro card -->
+
+             <!--Row card item 5/primeiro card -->
+             <div class="row-card-item">
+                <img src="img/limpeza.png" alt="">
+                <p class="nome-servico">
+                    <strong>Limpeza</strong>
+                </p>
+                <p>A limpeza dental profissional, também conhecida como profilaxia, 
+                    é essencial para manter a saúde bucal em dia. Durante esse procedimento, o dentista remove a placa bacteriana e o tártaro, 
+                    prevenindo problemas como cáries e doenças gengivais.</p>
+            </div>
+            <!--fim Row card item 5/primeiro card -->
+
+            <!--Row card item 6/primeiro card -->
+            <div class="row-card-item">
+                <img src="img/clareamento.png" alt="">
+                <p class="nome-servico">
+                    <strong>Clareamento</strong>
+                </p>
+                <p>O clareamento dental é um procedimento popular que visa tornar os 
+                    dentes mais brancos e luminosos. Utilizando agentes clareadores, 
+                    o tratamento remove manchas e descolorações.</p>
+            </div>
+            <!--fim Row card item 7/primeiro card -->
+
+             <!--Row card item 6/primeiro card -->
+             <div class="row-card-item">
+                <img src="img/dente_parafuso.png" alt="">
+                <p class="nome-servico">
+                    <strong>Próteses Dentárias</strong>
+                </p>
+                <p>As próteses dentárias são dispositivos customizados que substituem 
+                    dentes ausentes, restaurando a função mastigatória e a estética do sorriso. Elas podem ser removíveis ou fixas, 
+                    adaptando-se às necessidades de cada paciente.</p>
+            </div>
+            <!--fim Row card item 7/primeiro card -->
+        </div>
+    </section>
+    <!--final serviços-->
+
+   
+
+    <!--footer-->
+        <footer class="footer">
+            <div class="container">
+                <div class="links">
+                    <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
+                    <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+                    <a href="https://api.whatsapp.com/send?phone=5515997506660"> <i class="fa-brands fa-whatsapp"></i> </a>
+                    <a href="#"> <i class="fa-brands fa-linkedin-in"></i> </a>
+                    <p>Desenvolvido por FIMP</p>
+                </div>
+            </div>
+        </footer>
+    <!--fim do footer-->
+
+    <script src="java/main.js"></script>
+</body>
+</html>
